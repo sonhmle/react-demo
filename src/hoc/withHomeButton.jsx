@@ -1,29 +1,23 @@
-import React from "react";
-import Button from "rsuite/Button";
-// import { useSample } from "../contexts/sample";
+import React from 'react';
+import Button from '../components/Button';
+import Divider from 'rsuite/Divider';
+import { Link } from 'react-router-dom';
 
-const withHomeButton = (Component) => {
-  const Page = (props) => {
-    const goHome = () => {
-      props.history.push("/");
-    };
-
+const withHomeButton = (WrappedComponent) => {
+  const WithHomeButton = (props) => {
     return (
       <div>
-        <Button onClick={goHome}>Home</Button>
-        <Component {...props} />
+        <Link to='/'>
+          <Button color='green'>Home</Button>
+        </Link>
+
+        <Divider />
+
+        <WrappedComponent {...props} />
       </div>
     );
   };
-
-  // Page.displayName = `withHomeButton(${
-  //   Component.displayName || Component.name
-  // })`;
-
-  return Page;
+  return WithHomeButton;
 };
 
 export default withHomeButton;
-
-// const { state } = useSample();
-// style={{ color: state.theme === "light" ? "red" : "blue" }}

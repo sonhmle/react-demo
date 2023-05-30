@@ -1,6 +1,6 @@
-import React, { useState, useCallback, useMemo } from "react";
-import withHomeButton from "../hoc/withHomeButton";
-import withAuth from "../hoc/withAuth";
+import React, { useState, useCallback, useMemo } from 'react';
+import withHomeButton from '../hoc/withHomeButton';
+import withAuth from '../hoc/withAuth';
 
 // const expensiveFunction = (count) => {
 //   for (let i = 0; i < 1000000000; i++) {}
@@ -8,7 +8,7 @@ import withAuth from "../hoc/withAuth";
 // };
 
 const Memoization = () => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
   const [count, setCount] = useState(0);
 
   // const newCount = useMemo(() => expensiveFunction(count), [count]);
@@ -21,7 +21,7 @@ const Memoization = () => {
       <div>
         <h2>This is a parent component.</h2>
         <input
-          type="text"
+          type='text'
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
@@ -38,7 +38,7 @@ const Memoization = () => {
 
 function ChildComponent(props) {
   const { count } = props;
-  console.log("child component re-renders");
+  console.log('child component re-renders');
   return (
     <div>
       <h2>This is a child component.</h2>

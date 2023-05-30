@@ -9,7 +9,7 @@ body {
 
 *,
 body {
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,3 +39,25 @@ body {
   flex-direction: column;
   min-height: 100vh;
 } */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2em;
+  background: linear-gradient(to right, #4697ce, #6dd5fa);
+  color: white;
+  font-weight: 600;
+}
+
+.rs-radio-group-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .rs-radio-checker > label {
+    color: #fff !important;
+  }
+}
