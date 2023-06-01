@@ -12,6 +12,8 @@ import Memoization from './pages/Memoization';
 import Loader from './components/Loader';
 import ReactContext from './pages/ReactContext';
 import RenderPropsToDoList from './pages/RenderPropsToDoList';
+import HooksTodoList from './pages/HooksTodoList';
+import TodoList from './pages/MemoizedToDo';
 
 // const Home = lazy(() => import("./pages/Home"));
 // const RenderProps = lazy(() => import("./pages/RenderProps"));
@@ -32,7 +34,9 @@ function App() {
               component={RenderPropsToDoList}
             />
             <Route exact path='/memoization' component={Memoization} />
+            <Route exact path='/memoized-todo' component={TodoList} />
             <Route exact path='/react-context' component={ReactContext} />
+            <Route exact path='/hooks-todo-list' component={HooksTodoList} />
             <Route exact path='/404' component={NotFoundPage} />
             <Redirect to='/404' />
           </Switch>

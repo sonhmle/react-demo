@@ -53,4 +53,11 @@ function ChildComponent(props) {
 
 export default withHomeButton(Memoization);
 
+// const MemoComponent = React.memo(Component, (oldProps, newProps) => {
+//   oldProps.items.every((oldItem, index) => {
+//     const point = newProps.items[index];
+//     return oldItem.x === point.x && oldItem.y === point.y;
+//   });
+// });
+
 // incrementCount={incrementCount}

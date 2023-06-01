@@ -1,7 +1,9 @@
-import { memo, useMemo, useState } from "react";
+import { memo, useMemo, useState } from 'react';
+
+const MemoProfile = memo(Profile);
 
 function Sample() {
-  const [name, setName] = useState("Taylor");
+  const [name, setName] = useState('Taylor');
   const [age, setAge] = useState(42);
 
   const person = useMemo(() => ({ name, age }), [name, age]);
@@ -9,12 +11,9 @@ function Sample() {
   return <Profile person={person} />;
 }
 
-const Profile = memo(function Profile({ person }) {
-  // ...
-});
+function Sample() {
+  const [name, setName] = useState('Taylor');
+  const [age, setAge] = useState(42);
 
-// function Page() {
-//     const [name, setName] = useState('Taylor');
-//     const [age, setAge] = useState(42);
-//     return <Profile name={name} age={age} />;
-//   }
+  return <Profile name={name} age={age} />;
+}

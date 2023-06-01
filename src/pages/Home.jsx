@@ -25,7 +25,9 @@ const Home = () => {
         <Link to='/render-props'>Render Props</Link>
         <Link to='/render-props-todo-list'>Render Props ToDo List</Link>
         <Link to='/react-context'>React Context</Link>
+        <Link to='/hooks-todo-list'>Hooks ToDo List</Link>
         <Link to='/memoization'>Memoization</Link>
+        <Link to='/memoized-todo'>Memoized ToDo List</Link>
       </div>
     </div>
   );

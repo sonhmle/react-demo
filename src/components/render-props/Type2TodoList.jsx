@@ -52,4 +52,4 @@ const Type2TodoList = () => {
   );
 };
 
-export default withHomeButton(Type2TodoList);
+export default Type2TodoList;
