@@ -11,9 +11,9 @@ import RenderProps from './pages/RenderProps';
 import Memoization from './pages/Memoization';
 import Loader from './components/Loader';
 import ReactContext from './pages/ReactContext';
-import RenderPropsToDoList from './pages/RenderPropsToDoList';
-import HooksTodoList from './pages/HooksTodoList';
-import TodoList from './pages/MemoizedToDo';
+import RenderPropsToDoList from './pages/ToDoList/RenderPropsToDoList';
+import HooksTodoList from './pages/ToDoList/HooksTodoList';
+import TodoList from './pages/ToDoList/MemoizedToDo';
 
 // const Home = lazy(() => import("./pages/Home"));
 // const RenderProps = lazy(() => import("./pages/RenderProps"));

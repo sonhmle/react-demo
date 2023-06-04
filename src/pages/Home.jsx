@@ -16,17 +16,24 @@ const Home = () => {
   };
 
   return (
-    <div style={{ padding: 10 }}>
-      <div>Home</div>
-      <div>Currently: {isAuth ? 'Login' : 'Logout'}</div>
-      <Button onClick={enterLogin}>Login</Button>
-      <Button onClick={handleLogout}>Logout</Button>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <Link to='/render-props'>Render Props</Link>
+    <div>
+      {/* <div>Currently: {isAuth ? 'Login' : 'Logout'}</div> */}
+      {/* <Button onClick={enterLogin}>Login</Button>
+      <Button onClick={handleLogout}>Logout</Button> */}
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 10,
+          textAlign: 'left',
+        }}
+      >
+        <div>Home</div>
+        {/* <Link to='/render-props'>Render Props</Link> */}
         <Link to='/render-props-todo-list'>Render Props ToDo List</Link>
-        <Link to='/react-context'>React Context</Link>
+        {/* <Link to='/react-context'>React Context</Link> */}
         <Link to='/hooks-todo-list'>Hooks ToDo List</Link>
-        <Link to='/memoization'>Memoization</Link>
+        {/* <Link to='/memoization'>Memoization</Link> */}
         <Link to='/memoized-todo'>Memoized ToDo List</Link>
       </div>
     </div>

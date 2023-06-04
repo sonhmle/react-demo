@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import '../styles/render-props-todo-list.css';
+import '../../styles/render-props-todo-list.css';
 import RadioGroup from 'rsuite/RadioGroup';
 import Radio from 'rsuite/Radio';
-import Type1TodoList from '../components/render-props/Type1TodoList';
-import Type2TodoList from '../components/render-props/Type2TodoList';
-import Type3TodoList from '../components/render-props/Type3TodoList';
+import Type1TodoList from '../../components/render-props/Type1TodoList';
+import Type2TodoList from '../../components/render-props/Type2TodoList';
+import Type3TodoList from '../../components/render-props/Type3TodoList';
 
 const RenderPropsToDoList = () => {
   const [displayMode, setDisplayMode] = useState('1');
@@ -15,7 +15,7 @@ const RenderPropsToDoList = () => {
         name='radioList'
         inline
         appearance='picker'
-        defaultValue='normal'
+        defaultValue='1'
         onChange={(value) => setDisplayMode(value)}
         style={{
           padding: 10,

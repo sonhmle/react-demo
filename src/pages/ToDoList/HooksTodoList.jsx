@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/render-props-todo-list.css';
-import Button from '../components/Button';
+import '../../styles/render-props-todo-list.css';
+import Button from '../../components/Button';
 import Input from 'rsuite/Input';
-import useTodoList from '../hooks/useTodoList';
+import useTodoList from '../../hooks/useTodoList';
 
 const HooksTodoList = () => {
   const { tasks, toggleStatus, removeTask, input, setInput, handleSubmit } =
